@@ -39,6 +39,25 @@
 6. A message box was added to let the player which avatar had been selected.
 7. "PickedPlayer" image, which is used as the player image, is overwritten by the image of the avatar character selected.
 
+---
+# **Yusuff Afeez** #
+---
+## **User Story 1**: As a player, I want a welcoming page to show up first when the game is loaded.
+
+I went about this by
+1. Researching online how to create and add form to a project in C-sharp. Youtube videos did help me a lot on this.
+2. Implemented the knowledge obtained from watching tutorial on youtube by creating this form on the group project and added a label which allows me to add the welcoming text.
+3. I also added a play button to the welcoming screen, serving as a connection point to the rest of the game.
+4. I was not able to add the help form to the game as intended before.
+
+## **User Story 2**: As a player, I want to have the option to restart the game
+ I went about this by 
+1. Researching first how to write a code to restart an application in C sharp.
+2. Later on, I implemented the knowledge by writing the code in the formlevel.cs file 
+3. thereafter, I tested it and it worked fine in that once the restart button is selected, the current stage of the game is canceled and the game starts again from the beginning without exiting the game. 
+
+
+
 
 
 ---
@@ -94,3 +113,20 @@
 4.  Now I had to randomly place the player and enemy characters in open areas of the map. I did this by creating a while loop checking if the player/enemy object was null. If it was, then I grabbed a 2 random integers (between 1 and the size of the map minus 1). I then used these two numbers to check the map matrix to see if the value was 0 (open), and if so place the character/enemy there. If it was 1, then I just looped back through until the character/enemy was placed.
 
 ---
+---
+# **Yusuff Afeez** #
+---
+## **User Story 1**: As a user, I want to assign unique intro voice to selected avatar out of the bunch of avatars available.
+
+I went about this by doing the following:
+1. I created audio files with each corresponding to a particular avatar.
+2. I used a pitch change application to modulate the pitch of the audio file
+3. Thereafter, I downloaded the modified audio file and saved it inside the bin folder of the repository.
+4. The third step is repeated for all the remaining audio files.
+5. I wrote the corresponding line of codes to run this added feature by editing the FrmLevel
+6. I believe all to be working fine as I have tested it and it worked.	
+
+## **User Story 2**: As a player, I want to be able to control my game using pause and play control functions.
+1. This is achieved by modifying the existing switch statements and added to it another case that made spacebar key to be the control.
+2. I also add a GamePursed function to the body of code already existing. Part of the task of this code is to note down the time at the point of pausing the game so that whenever the game is resumed by pressing the spacebar key, the time will start from where it was before.
+3. At the end, I checked it out on my local machine and found all to be working well.
